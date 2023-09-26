@@ -363,7 +363,7 @@ func (veth *Veth) Attrs() *LinkAttrs {
 }
 
 func (veth *Veth) Type() string {
-	return "veth"
+	return "tianchi_veth"
 }
 
 // Wireguard represent links of type "wireguard", see https://www.wireguard.com/
@@ -1208,6 +1208,7 @@ func (gtp *GTP) Type() string {
 }
 
 // Virtual XFRM Interfaces
+//
 //	Named "xfrmi" to prevent confusion with XFRM objects
 type Xfrmi struct {
 	LinkAttrs
