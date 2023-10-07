@@ -1752,6 +1752,8 @@ func LinkDeserialize(hdr *unix.NlMsghdr, m []byte) (Link, error) {
 						link = &Vlan{}
 					case "veth":
 						link = &Veth{}
+					case "tianchi_veth":
+						link = &Veth{}
 					case "wireguard":
 						link = &Wireguard{}
 					case "vxlan":
